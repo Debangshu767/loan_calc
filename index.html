@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://css.gg/math-percent.css' rel='stylesheet'>
+    <link href='https://css.gg/dollar.css' rel='stylesheet'>
+    <link href='https://css.gg/calendar-dates.css' rel='stylesheet'>
+    <style>
+        #results {
+            display: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Loan calculator</h1>
+        <div class="card">
+            <form class="full-field" id="loan-form">
+                <div class="icons"><i class="gg-dollar"></i></div>
+                <div class="custom-field">
+                    <input autocomplete="off" type="number" id="amount" required>
+                    <span class="placeholder">Loan amount </span>
+                </div>
+
+                <div class="icons"><i class="gg-math-percent"></i></div>
+                <div class="custom-field">
+                    <input autocomplete="off" type="number" id="interest" required>
+                    <span class="placeholder">Interest </span>
+                </div>
+
+                <div class="icons"><i class="gg-calendar-dates"></i></div>
+                <div class="custom-field">
+                    <input autocomplete="off" type="number" id="years" required>
+                    <span class="placeholder">Years to repay </span>
+                </div>
+
+                <div class="btn">Calculate</div>
+            </form>
+        </div>
+        <div id="results">
+            <h1 class="heading">Results</h1>
+            <div class="card">
+                <div class="custom-fieldd">
+                    <input autocomplete="off" type="number" id="monthly-payment" disabled>
+                    <span class="placeholder">Monthly payment: </span>
+                </div>
+
+                <div class="custom-fieldd">
+                    <input autocomplete="off" type="number" id="total-payment" disabled>
+                    <span class="placeholder">Total payment:</span>
+                </div>
+
+                <div class="custom-fieldd">
+                    <input autocomplete="off" type="number" id="total-interest" disabled>
+                    <span class="placeholder">Total interest: </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

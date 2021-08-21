@@ -1,0 +1,165 @@
+* { Box-sizing: Border-box;
+    font-family: Garamond; }
+
+    body {
+     background-color: rgb(31, 31, 31);;
+}
+
+.container {
+    margin: auto;
+    padding: 5px;
+    background-color: #ff7b25;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading {
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #ff7b25;
+    padding: 5px;
+}
+
+.custom-field{
+    position: relative;
+    margin: 30px 0px 30px 30px;
+}
+.custom-field input{
+    border : none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    background: rgb(31, 31, 31);;
+    font-size: 14px;
+    border: 2px solid;
+    border-color: #ff7b25;
+
+}
+
+.custom-field .placeholder{
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    color: #ff7b25;
+    transition: 
+    top 0.3s ease,
+    font-size 0.3s ease,
+    color 0.3s ease;
+
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: -50%;
+    font-size: 13px;
+    color: #ff7b25;
+    padding-bottom: 10px;
+}
+
+
+input, select, textarea{
+    top: 10px;
+    font-size: 13px;
+    color: #ff7b25;
+    padding-bottom: 10px;
+}
+
+.btn {
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #ff7b25;
+    color: rgb(31, 31, 31);
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn:hover{
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgb(126, 46, 0);
+    color: rgb(255, 242, 231);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.icons{
+    position: relative;
+    float: left;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    background-color: #ff7b25;
+    color: rgb(31, 31, 31);
+    
+}
+.gg-math-percent{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+
+}
+
+.gg-dollar{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+
+.gg-calendar-dates{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.custom-fieldd{
+    position: relative;
+    margin: 30px 30px 30px 120px;
+}
+.custom-fieldd input{
+    border : none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    background: rgb(31, 31, 31);;
+    font-size: 14px;
+    border: 2px solid;
+    border-color: #ff7b25;
+
+}
+
+.custom-fieldd .placeholder{
+    position: absolute;
+    left: -120px;
+    top: 20%;
+    color: #ff7b25;
+
+}
+
+@media (max-width: 991px)
+{
+    .container {
+        width: 100%;
+        margin: none;
+        padding: 5px;
+    }
+    .card{
+        margin: 5px;
+    }
+}
